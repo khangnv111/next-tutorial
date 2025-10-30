@@ -1,4 +1,5 @@
 import { Metadata} from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: {
@@ -18,6 +19,7 @@ export default function MarketingLayout({
     <html lang="en">
       <body>
         <header style={{backgroundColor: "lightblue", padding: "1rem"}}>
+            <Link href="/">Home</Link>
             <p>Header</p>
         </header>
       {children}
